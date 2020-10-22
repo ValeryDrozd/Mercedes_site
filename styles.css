@@ -51,6 +51,39 @@ a{
 
 #exterior{
 	display: grid;
+	display: grid;
+  	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  	gap: 0px 0px;
+  	grid-template-areas:
+    "exHead exHead exHead exHead exHead exHead"
+    "exTwoImDiv exTwoImDiv . . exdescDiv  exdescDiv"
+    "exTwoImDiv exTwoImDiv . . exdescDiv  exdescDiv"
+    "exTwoImDiv exTwoImDiv eximDiv eximDiv exdescDiv exdescDiv "
+    "exTwoImDiv exTwoImDiv eximDiv eximDiv exdescDiv  exdescDiv"
+    "exTwoImDiv exTwoImDiv . . exdescDiv  exdescDiv"
+    "exTwoImDiv exTwoImDiv . . exdescDiv  exdescDiv";
+
+}
+
+.exHead{
+	grid-area: exHead;
+}
+
+.exdescDiv{
+	grid-area: exdescDiv;
+}
+
+.exOneImDiv{
+	grid-area: eximDiv;
+}
+
+.exTwoImDiv{
+	grid-area: exTwoImDiv;
+}
+
+.exList{
+	margin: 30px;
 }
 
 @media screen and (max-width: 1500px){
