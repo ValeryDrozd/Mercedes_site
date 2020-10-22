@@ -72,6 +72,9 @@ a{
 
 .exdescDiv{
 	grid-area: exdescDiv;
+	height: 100%;
+	vertical-align: middle;
+	border-left: 1px solid white;
 }
 
 .exOneImDiv{
@@ -80,6 +83,10 @@ a{
 
 .exTwoImDiv{
 	grid-area: exTwoImDiv;
+	margin-left: 25px;
+	border-left: 1px solid white;
+	height: 100%; 
+	padding: 10px;
 }
 
 .exList{
