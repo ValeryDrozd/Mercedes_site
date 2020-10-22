@@ -1,1 +1,52 @@
-width:100px;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+	margin: 0;
+	padding: 0;
+	color: white;
+	background-color: black;
+	font-family: "Roboto";
+	font-weight: 300;
+	font-size: 1.3em;
+}
+
+#head{
+	position: sticky;
+	height: 10vh;
+	background-color: black;
+	width: 100%;
+}
+
+#logo{
+	margin: 15px;
+}
+
+#introDiv{
+	height: 90vh;
+	background-image: radial-gradient(#00000000,#000000ab, #000000),url(mainCarBg.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	font-weight: 100;
+}
+
+.headerBtn{
+	height: 100%;
+	width: 8%;
+	margin:0;
+	background-color: black;
+	color:inherit;
+	font:inherit;
+	border: none;
+	cursor: pointer;
+	transition-duration: 1s;
+}
+.headerBtn:hover{
+	font-size: 2em;
+}
+
+@media screen and (max-width: 1500px){
+	.headerBtn{
+		font-size: 1.2em;
+		width: 12%;
+	}
+}
