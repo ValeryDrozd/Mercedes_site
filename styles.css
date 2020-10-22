@@ -9,7 +9,9 @@ body{
 	font-weight: 300;
 	font-size: 1.3em;
 }
-
+a{
+	text-decoration: none;
+}
 #head{
 	position: sticky;
 	height: 10vh;
@@ -34,14 +36,21 @@ body{
 	width: 8%;
 	margin:0;
 	background-color: black;
-	color:inherit;
+	color:white;
 	font:inherit;
 	border: none;
 	cursor: pointer;
 	transition-duration: 1s;
+	text-decoration: none;
 }
+
 .headerBtn:hover{
 	font-size: 2em;
+	width: 16%;
+}
+
+#exterior{
+	display: grid;
 }
 
 @media screen and (max-width: 1500px){
