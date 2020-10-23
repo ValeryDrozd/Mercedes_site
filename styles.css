@@ -52,15 +52,13 @@ a{
 #exterior{
 	display: grid;
   	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   	gap: 0px 0px;
   	grid-template-areas:
     "exHead exHead exHead exHead exHead exHead"
     "exTwoImDiv exTwoImDiv . . exdescDiv  exdescDiv"
-    "exTwoImDiv exTwoImDiv . . exdescDiv  exdescDiv"
-    "exTwoImDiv exTwoImDiv eximDiv eximDiv exdescDiv exdescDiv "
     "exTwoImDiv exTwoImDiv eximDiv eximDiv exdescDiv  exdescDiv"
-    "exTwoImDiv exTwoImDiv . . exdescDiv  exdescDiv"
+    "exTwoImDiv exTwoImDiv eximDiv eximDiv exdescDiv exdescDiv "
     "exTwoImDiv exTwoImDiv . . exdescDiv  exdescDiv";
 
 }
@@ -69,7 +67,7 @@ a{
 	margin-top: 20px;
 	display: grid;
 	grid-template-columns: 2fr 2fr 2fr;
-	grid-template-rows: 1fr 9fr ;
+	grid-template-rows: 1fr 6fr ;
 	width: 100%;
 	height: 90vh;
 	gap: 0px 0px;
@@ -119,6 +117,7 @@ a{
 	grid-area: intImage;
 	margin-left: 20px;border-left: 1px white solid;
 }
+
 
 .intDesc{
 	grid-area: interDesc;
