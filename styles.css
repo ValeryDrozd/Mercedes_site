@@ -9,8 +9,17 @@ body{
 	font-weight: 300;
 	font-size: 1.3em;
 }
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
 a{
 	text-decoration: none;
+}
+h1,h2,h3,h4{
+	font:inherit;
 }
 #head{
 	position: sticky;
@@ -60,7 +69,6 @@ a{
     "exTwoImDiv exTwoImDiv eximDiv eximDiv exdescDiv  exdescDiv"
     "exTwoImDiv exTwoImDiv eximDiv eximDiv exdescDiv exdescDiv "
     "exTwoImDiv exTwoImDiv . . exdescDiv  exdescDiv";
-
 }
 
 #interior{
@@ -74,6 +82,11 @@ a{
 	grid-template-areas: 
 	"intHead intHead intHead"
 	"interDesc intImage intImage";
+}
+
+.interiordP{
+	font:inherit;
+	margin: 10px;
 }
 
 .exHead{
@@ -118,6 +131,16 @@ a{
 	margin-left: 20px;border-left: 1px white solid;
 }
 
+.safetyMain{
+	display: flex;
+	width: 100%;
+}
+
+.safetyMain div{
+	flex: 1;
+	border-left: 1px solid white;
+	margin-left: 25px;
+}
 
 .intDesc{
 	grid-area: interDesc;
