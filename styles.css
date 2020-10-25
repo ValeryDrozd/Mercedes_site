@@ -244,7 +244,7 @@ button:focus{
 
 @media screen and (max-width: 1500px){
 	body{
-		font-size: 1.2em;
+		font-size: 1.4em;
 	}
 	.headerBtn{
 		text-align: center;
@@ -267,6 +267,26 @@ button:focus{
 		grid-template: 
 		". engineHead engineHead ."
 		"leftArrow firstEngine secondEngine rightArrow";
+	}
+	#interior {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 1fr 6fr 10fr;
+    width: 100%;
+    height: fit-content;
+    gap: 0px 0px;
+    grid-template-areas:
+        "intHead intHead intHead"
+        "interDesc interDesc interDesc"
+        "intImage intImage intImage";
+	}
+	.intImages {
+    	grid-area: intImage;
+   		margin-left: 20px;
+   	 	border-left: 1px white solid;
+    	height: fit-content;
+    	margin:25px;
 	}
 	.firstEngine{
 		grid-area: firstEngine;
