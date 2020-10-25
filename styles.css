@@ -99,7 +99,7 @@ td{
 	height: 90vh;
 	gap:0px 0px; 
 	grid-template: 
-	"engineHead engineHead engineHead engineHead "
+	". . engineHead . ."
 	"leftArrow firstEngine secondEngine thirdEngine rightArrow";
 }
 
@@ -126,7 +126,7 @@ td{
 	grid-area: thirdEngine;
 }
 
-.interiordP{
+.description{
 	font:inherit;
 	margin: 10px;
 }
@@ -190,6 +190,10 @@ td{
 	margin-left:25px;
 }
 
+.navButton{
+	height: 100%;width: 100%;background:inherit;color:inherit;font:inherit;
+	border: none;
+}
 @media screen and (max-width: 1500px){
 	.headerBtn{
 		font-size: 1.2em;
