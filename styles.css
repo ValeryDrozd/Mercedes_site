@@ -36,6 +36,11 @@ button:focus{
 	outline: none;
 }
 
+hr{
+	width:90%;
+	align-self: center;
+}
+
 #mainHeader{
 	font:inherit; font-size: 2em;
 }
@@ -124,7 +129,7 @@ button:focus{
 	height: 100%;
 	gap:0px 0px; 
 	grid-template: 
-	". . engineHead . ."
+	"engineHead engineHead engineHead engineHead engineHead"
 	"leftArrow firstEngine secondEngine thirdEngine rightArrow";
 }
 
@@ -265,7 +270,7 @@ button:focus{
 		height: 100%;
 		gap:0px 0px; 
 		grid-template: 
-		". engineHead engineHead ."
+		"engineHead engineHead engineHead engineHead"
 		"leftArrow firstEngine secondEngine rightArrow";
 	}
 	#interior {
