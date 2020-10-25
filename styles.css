@@ -28,6 +28,9 @@ td{
 	padding: 10px;
 }
 
+button:focus{
+	outline: none;
+}
 #head{
 	position: sticky;
 	height: 10vh;
@@ -193,6 +196,28 @@ td{
 .navButton{
 	height: 100%;width: 100%;background:inherit;color:inherit;font:inherit;
 	border: none;
+}
+
+.navButton:hover{
+	animation: buttons;
+    animation-duration:4s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+
+@keyframes buttons {
+	0%{
+		background-color: inherit; 
+		font:inherit;
+	}
+	50%{
+		background-color:rgb(100,100,100);
+		font-size: 2em;
+	}
+    100%{
+		background-color: inherit; 
+		font:inherit;
+	}
 }
 @media screen and (max-width: 1500px){
 	.headerBtn{
