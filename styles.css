@@ -35,6 +35,11 @@ button{
 button:focus{
 	outline: none;
 }
+
+#mainHeader{
+	font:inherit; font-size: 2em;
+}
+
 #head{
 	position: sticky;
 	height: 10vh;
@@ -62,7 +67,7 @@ button:focus{
 
 #upBtn{
 	position: fixed;
-	left: 97%;
+	right: 2%;
 	bottom: 5vh;
 	width:50px;
 	height: 50px;
@@ -115,7 +120,7 @@ button:focus{
 	grid-template-rows: 1fr 3fr 3fr 3fr 1fr;
 	grid-template-columns: 1fr 9fr;
 	width: 100%;
-	height: 90vh;
+	height: 100%;
 	gap:0px 0px; 
 	grid-template: 
 	". . engineHead . ."
@@ -237,8 +242,41 @@ button:focus{
 }
 
 @media screen and (max-width: 1500px){
-	.headerBtn{
+	body{
 		font-size: 1.2em;
+	}
+	.headerBtn{
+		text-align: center;
+		font-size: 1em;
 		width: 12%;
+	}
+	#mainHeader{
+		font-size: 1.6em;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	#engineComparison{
+		display: grid;
+		grid-template-rows: 1fr 2fr 2fr 1fr;
+		grid-template-columns: 1fr 9fr;
+		width: 100%;
+		height: 100%;
+		gap:0px 0px; 
+		grid-template: 
+		". engineHead engineHead ."
+		"leftArrow firstEngine secondEngine rightArrow";
+	}
+	.firstEngine{
+		grid-area: firstEngine;
+	}
+
+	.secondEngine{
+		grid-area: secondEngine;
+	}
+
+	.thirdEngine{
+		grid-area: thirdEngine;
+		display:none;
 	}
 }
