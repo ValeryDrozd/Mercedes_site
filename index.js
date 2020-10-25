@@ -38,7 +38,8 @@ function change(side){
 }
 
 window.onscroll = function() {scrollFunction()};
-
+let head = document.getElementById('mainHeader');
+let maxHeight = document.getElementById('introDiv').scrollHeight*0.7;
 function scrollFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     document.getElementById('upBtn').hidden = false;
@@ -46,6 +47,7 @@ function scrollFunction() {
   } else {
     document.getElementById('upBtn').hidden = true;
   }
+  head.style.top = Math.max(0,Math.min(window.scrollY,maxHeight))+'px';
 }
 function topFunction() {
   document.body.scrollTop = 0; 
