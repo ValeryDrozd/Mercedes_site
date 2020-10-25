@@ -62,6 +62,7 @@ button:focus{
 	background-image: radial-gradient(#00000000,#000000ab, #000000),url(mainCarBg.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
+	background-attachment: fixed;
 	font-weight: 100;
 }
 
