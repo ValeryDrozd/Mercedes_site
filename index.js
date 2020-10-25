@@ -37,3 +37,17 @@ function change(side){
 		
 }
 
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById('upBtn').hidden = false;
+    console.log("Scroll");
+  } else {
+    document.getElementById('upBtn').hidden = true;
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0;
+}
