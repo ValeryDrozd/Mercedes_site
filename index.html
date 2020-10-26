@@ -11,38 +11,28 @@
 	<header id="head">
 		
 			<a href="https://www.mercedes-benz.ua/passengercars.html?group=all&subgroup=see-all&view=BODYTYPE">
-			<img src="logo.svg" alt="Site logo" style="float: left;" >
+			<img src="logo.svg" alt="Site logo" style="float: left;padding: 15px;" >
 			</a>
 		
-		<div style="text-align: right; height: 100%;width: 100%;">
-				<a href="#introDiv">
-				<button class="headerBtn">
+		<div style="text-align: right; height: 90%;width: 100%;">
+				<button class="headerBtn" onclick="jump('introDiv')">
 					Intro
 				</button>
-				</a>
-				<a href="#exterior">
-					<button class="headerBtn">
-						Exterior
-					</button>
-				</a>
-				<a href="#interior">
-				<button class="headerBtn">
+				<button class="headerBtn" onclick="jump('exterior')">
+					Exterior
+				</button>
+				<button class="headerBtn" onclick="jump('interior')">
 					Interior
 				</button>
-				</a>
-				<a href="#safety">
-				<button class="headerBtn">
+				<button class="headerBtn" onclick="jump('safety')">
 					Safety
 				</button>
-				</a>
-				<a href="#engines">
-				<button class="headerBtn">
+				<button class="headerBtn" onclick="jump('engines')">
 					Engines
 				</button>
-				</a>
 		</div>
 	</header>
-	<button onclick="topFunction()" id="upBtn" hidden="true" title="Go to top">Top</button>
+	<button onclick="topFunction()" id="upBtn" title="Go to top">Top</button>
 
 <!--	<a href="#introDiv" id="upDiv"><button id="upBtn">UP</button></a>-->
 	<div id="introDiv" style="text-align:center;">
@@ -162,7 +152,8 @@
 				<div class="engineComparisonHead" style="padding: 10px;text-align: center;"><hr ><h2 style="font: inherit;font-size: 1.9em;">Some our engines</h2></div>
 				<div class="leftArrow">
 					<button onclick="change('L')" class="navButton">
-						<</button>
+						←
+						</button>
 				</div>
 				<div class="firstEngine">
 					<img id = "firstEngineImg" alt="engine" style="width: 90%;" src="a">
@@ -209,7 +200,7 @@
 
 				<div class="rightArrow">
 					<button onclick='change("R")' class="navButton">
-						>
+						→
 					</button>
 				</div>
 			</div>

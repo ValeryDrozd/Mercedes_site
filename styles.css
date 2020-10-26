@@ -87,17 +87,19 @@ table{
 	bottom: 5vh;
 	width:50px;
 	height: 50px;
+	visibility: hidden;
 }
 
 .headerBtn{
 	height: 100%;
 	width: 8%;
 	margin:0;
-
+	color:white;
 	border: none;
 	cursor: pointer;
 	transition-duration: 1s;
 	text-decoration: none;
+	appearance: button;
 }
 
 .headerBtn:hover{

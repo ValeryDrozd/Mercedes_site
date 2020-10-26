@@ -40,15 +40,22 @@ function change(side){
 window.onscroll = function() {scrollFunction()};
 let head = document.getElementById('mainHeader');
 let maxHeight = document.getElementById('introDiv').scrollHeight*0.7;
+
 function scrollFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById('upBtn').hidden = false;
+    document.getElementById('upBtn').style.visibility = 'visible';
  //   console.log("Scroll");
   } else {
-    document.getElementById('upBtn').hidden = true;
+    document.getElementById('upBtn').style.visibility = 'hidden';
   }
   head.style.top = Math.max(0,Math.min(window.scrollY,maxHeight))+'px';
 }
+
+function jump(h){
+   var top = document.getElementById(h).offsetTop - document.getElementById('head').scrollHeight; //Getting Y of target element
+   window.scrollTo(0, top);    //Don't like hashes. Changing it back.
+}
+
 function topFunction() {
   document.body.scrollTop = 0; 
   document.documentElement.scrollTop = 0;
