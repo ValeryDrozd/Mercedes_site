@@ -4,16 +4,17 @@
 	<title>The car dealer site</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta charset="UTF-8">
 
 </head>
 <body>
 	<header id="head">
 		
 			<a href="https://www.mercedes-benz.ua/passengercars.html?group=all&subgroup=see-all&view=BODYTYPE">
-			<img src="logo.svg" style="float: left;" >
+			<img src="logo.svg" alt="Site logo" style="float: left;" >
 			</a>
 		
-		<div align="right" style="text-align: right; height: 100%;width: 100%;">
+		<div style="text-align: right; height: 100%;width: 100%;">
 				<a href="#introDiv">
 				<button class="headerBtn">
 					Intro
@@ -44,11 +45,11 @@
 	<button onclick="topFunction()" id="upBtn" hidden="true" title="Go to top">Top</button>
 
 <!--	<a href="#introDiv" id="upDiv"><button id="upBtn">UP</button></a>-->
-	<div id="introDiv" align="center">
+	<div id="introDiv" style="text-align:center;">
 		<h1 id = "mainHeader" style="position: relative;"> Cheap,but very premial car. It will impress you every day</h1>
 	<!--	<img src="mainCarBg.jpg" style="z-index: -1;">kcvkcvjxckv-->
 	</div>
-	<div id="exterior" align="center" style="height: 100%; width: 100%;">
+	<div id="exterior" style="height: 100%; width: 100%;">
 		<div class="exHead">
 			<hr >
 			<h2 style="text-align:center;font-size: 1.9em;">Exterior</h2>
@@ -82,9 +83,9 @@
 		</div>
 
 	</div>
-	<div id="interior" align="center" style="height: 100%;width: 100%;margin-top:10px: ">
+	<div id="interior" style="height: 100%;width: 100%;margin-top:10px: ">
 		<div class="intHead" style="margin-top: 20px;"> 
-			<hr >
+			<hr>
 			<h2 style="text-align:center;font-size: 1.9em;">Interior</h2>
 		</div>
 		<div class="intImages" >
@@ -114,10 +115,10 @@
 		</div>
 	</div>
 <!-- DIV of the safety -->
-	<div id="safety" align="center" style="height: 100%;width: 100%;margin-top:30px;">
+	<div id="safety" style="text-align: center;align-content: center; height: 100%;width: 100%;margin-top:30px;">
 		<div class="safetyHead" style="margin-top: 20px;"> 
 			<hr >
-			<h2 style="text-align:center;font-size: 1.9em; margin: 20px;">Safety</h2>
+			<h2 style="font-size: 1.9em; margin: 20px;">Safety</h2>
 
 				Despite this car is cheap, it has a lot of safety options. Let's consider
 				three main types of them.
@@ -147,22 +148,21 @@
 			</div>
 		</div>
 	</div>
-	<div id="engines" align="center" style="height: 100%;width: 100%;margin-top:30px;">
+	<div id="engines" style="height: 100%;width: 100%;margin-top:30px;">
 			<div class="engineHead" style="margin-top: 20px;"> 
 				<hr >
 				<h2 style="text-align:center;font-size: 1.9em; margin: 20px;">Engines</h2>
 			</div>
-			<div style="width: 90%;" align="center">
+			<div style="width: 90%;margin: 0 auto;margin-left: 25px;border-left: 1px solid white;padding-left: 25px;">
 				<p class="description">
 				For this car we offer a wide choice of engines for any purposes: both for quiet movement on the city and for fast driving on the highway or on a track.
 				It starts with the cheapest petrol and diesel engines A160-A200d with a six-speed manual transmission from 109 to 163 horsepower to A35-A45 C AMG, which develop 321 and 421 horsepower, respectively, paired with AMG sports SPEEDSHIFT DCT 7G and 8G gearboxes and 4Matic awd system.</p><br><br><p class="description"> If you want to choose a motor with medium power, you can choose engines a200 and a200d, which can also be equipped with all-wheel drive 4matis and automatic transmission, to engines a220d and a250. They are paired withare 7G and 8G gearboxes.</p><br><br><p class="description"> You can also buy a hybrid a250e, which is equipped with a gasoline engine with 160 horsepower and electric - 102 horsepower. This car is always equipped with all-wheel drive and 8g gearbox.</p>
 			</div>
-			<div id="engineComparison" style="margin-top: 20px;" align="center">
-				<div class="engineComparisonHead" align="center" style="padding: 10px;"><hr style="width: 95%;margin: 10px;"><h2 style="font: inherit;font-size: 1.9em;">Some our engines</h2></div>
+			<div id="engineComparison" style="margin-top: 20px;">
+				<div class="engineComparisonHead" style="padding: 10px;text-align: center;"><hr ><h2 style="font: inherit;font-size: 1.9em;">Some our engines</h2></div>
 				<div class="leftArrow">
 					<button onclick="change('L')" class="navButton">
-						<
-					</button>
+						<</button>
 				</div>
 				<div class="firstEngine">
 					<img id = "firstEngineImg" alt="engine" style="width: 90%;" src="a">
